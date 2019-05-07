@@ -1,8 +1,19 @@
 <html>
     <head></head>
     <body>
+        <%= 
+        if message.nil? == false
+            message
+        end
+        %>
+        <br>
         <p>
             The secret number is <%= number %>
         </p>
     </body>
 </html>
+
+    <form>
+        <input type='text' name='guess' />
+        <input type='submit' value='Guess!' />
+    </form>
